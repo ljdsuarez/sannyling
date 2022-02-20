@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "737098801057",
+    "project_id": "sannyling-757c6",
+    "storage_bucket": "sannyling-757c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737098801057:android:cc7fde767bc9782875b5e0",
+        "android_client_info": {
+          "package_name": "com.example.sannyling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737098801057-54khr0ge5pboqoot3o0h0pe1oq5j2qjk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUUd_vhoZaiHnpFAV3BUpEl4NnQS-qxrw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737098801057-54khr0ge5pboqoot3o0h0pe1oq5j2qjk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
