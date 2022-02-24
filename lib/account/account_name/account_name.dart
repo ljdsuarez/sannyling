@@ -25,8 +25,7 @@ class AccountName extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              child:
-                  AccountNameInitial(accountName.substring(0, 1).toUpperCase()),
+              child: AccountNameInitial(accountName),
               padding: const EdgeInsets.only(bottom: 25),
             ),
             Text(

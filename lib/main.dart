@@ -3,7 +3,8 @@ import 'package:firebase_core/firebase_core.dart';
 
 import 'home/home.dart';
 import 'list/list.dart';
-import 'account/account.dart';
+import 'account/account_user.dart';
+import 'account/account_admin.dart';
 import 'menu/menu.dart';
 
 Future<void> main() async {
@@ -34,6 +35,8 @@ class SannyLingAppHome extends StatefulWidget {
 
 class _SannyLingAppHomeState extends State<SannyLingAppHome> {
   var mainColor = const Color.fromARGB(255, 20, 70, 100);
+
+  var loginType = 'admin';
 
   @override
   Widget build(BuildContext context) {
@@ -91,11 +94,22 @@ class _SannyLingAppHomeState extends State<SannyLingAppHome> {
           ),
           Container(
             color: Colors.white,
-            child: const SannyLingList(),
+            child: loginType == 'admin'
+                ? const SannyLingList()
+                : const Text(
+                    "This Page is available only for admin users.",
+                    style: TextStyle(
+                      fontSize: 50,
+                      fontStyle: FontStyle.italic,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
           ),
           Container(
             color: Colors.white,
-            child: const SannyLingAccount(),
+            child: loginType == 'admin'
+                ? const SannyLingAccountAdmin()
+                : const SannyLingAccountUser(),
           ),
           Container(
             color: Colors.white,

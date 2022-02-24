@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-import 'account_info/loan_balance.dart';
-import 'account_info/paying_method.dart';
-import 'account_info/paying_rate.dart';
+import 'account_info/account_info_user/loan_balance.dart';
+import 'account_info/account_info_user/paying_method.dart';
+import 'account_info/account_info_user/paying_rate.dart';
 import 'account_name/account_name.dart';
-import 'account_info/loan_amount.dart';
+import 'account_info/account_info_user/loan_amount.dart';
 import './account_transactions/transactions.dart';
 
-class SannyLingAccount extends StatefulWidget {
-  const SannyLingAccount({Key? key}) : super(key: key);
+class SannyLingAccountUser extends StatefulWidget {
+  const SannyLingAccountUser({Key? key}) : super(key: key);
 
   @override
-  _SannyLingAccountState createState() => _SannyLingAccountState();
+  _SannyLingAccountUserState createState() => _SannyLingAccountUserState();
 }
 
-class _SannyLingAccountState extends State<SannyLingAccount> {
+class _SannyLingAccountUserState extends State<SannyLingAccountUser> {
   @override
   Widget build(BuildContext context) {
     return Container(
