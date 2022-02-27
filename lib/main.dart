@@ -36,7 +36,7 @@ class SannyLingAppHome extends StatefulWidget {
 class _SannyLingAppHomeState extends State<SannyLingAppHome> {
   var mainColor = const Color.fromARGB(255, 20, 70, 100);
 
-  var loginType = 'admin';
+  var adminLogin = true;
 
   @override
   Widget build(BuildContext context) {
@@ -94,7 +94,7 @@ class _SannyLingAppHomeState extends State<SannyLingAppHome> {
           ),
           Container(
             color: Colors.white,
-            child: loginType == 'admin'
+            child: adminLogin
                 ? const SannyLingList()
                 : const Text(
                     "This Page is available only for admin users.",
@@ -107,7 +107,7 @@ class _SannyLingAppHomeState extends State<SannyLingAppHome> {
           ),
           Container(
             color: Colors.white,
-            child: loginType == 'admin'
+            child: adminLogin
                 ? const SannyLingAccountAdmin()
                 : const SannyLingAccountUser(),
           ),

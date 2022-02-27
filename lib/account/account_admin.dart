@@ -5,6 +5,7 @@ import 'account_name/account_name.dart';
 import './account_transactions/transactions_admin.dart';
 import 'account_info/account_info_admin/cash_invested.dart';
 import './account_info/account_info_admin/cash_balance.dart';
+import './account_info/account_info_admin/cash_reduced.dart';
 
 class SannyLingAccountAdmin extends StatefulWidget {
   const SannyLingAccountAdmin({Key? key}) : super(key: key);
@@ -23,6 +24,7 @@ class _SannyLingAccountAdminState extends State<SannyLingAccountAdmin> {
           const AccountName("Julieta Suarez"),
           const CashInvested(750000),
           const CashBalance(50000),
+          const CashReduced(50000),
           Container(
             padding: const EdgeInsets.only(top: 10),
             width: double.infinity,
